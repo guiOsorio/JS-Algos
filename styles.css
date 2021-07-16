@@ -1,0 +1,30 @@
+* { font-family: 'Source Code Pro', sans-serif; }
+
+.container { margin-bottom: 10vh; }
+
+.centered-list {
+    padding-left: 5vw;
+    margin: auto 14vw auto 14vw;
+}
+
+.container:last-of-type { margin-bottom: 20vh; }
+
+#submit-btn5 { margin-top: 2%; }
+
+i { color: rosybrown; }
+
+@media only screen and (min-width: 768px) {
+    li {
+        margin: 5px 0 5px 70px;
+        padding-left: 25px;
+        
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    li { padding-left: 0; }
+    #submit-btn1,
+    #submit-btn2,
+    #submit-btn3,
+    #submit-btn4 { margin-top: 2%; }
+} 

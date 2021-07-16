@@ -1,0 +1,255 @@
+
+<head>
+    
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/526049b2db.js" crossorigin="anonymous"></script>
+    
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>Palindrome Checker</title>
+</head>
+
+<body>
+    <h1 class="mb-4 mt-3" style="padding: 0 0 20px 5vw; border-bottom: 2px solid black;">JS ALGORITHMS:</h1>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>PALINDROME CHECKER</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original1">Type something</label>
+            <input id="original1">
+            <button id="submit-btn1" type="submit">Palindrome or Not?</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Is a palindrome</h4>
+                <ul id="isPalindrome"></ul>
+            </div>
+            
+            <div class="col">
+                <h4 class="text-center">Not a palindrome</h4>
+                <ul id="notPalindrome"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>ROMAN NUMERAL CONVERTER</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original2">Type a number</label>
+            <input id="original2">
+            <button id="submit-btn2" type="submit">Convert to a Roman Numeral</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Roman Numerals</h4>
+                <ul id="romanNumeral" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>CAESAR'S CIPHER CONVERTER</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original3">Type a word/phrase (in UPPERCASE)</label>
+            <input id="original3">
+            <button id="submit-btn3" type="submit">Convert to a Caesar's Cipher</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Caesar Ciphered</h4>
+                <ul id="ciphered" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>TELEPHONE NUMBER VALIDATOR</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original4">Type a set of numbers</label>
+            <input id="original4">
+            <button id="submit-btn4" type="submit">Valid Phone Number?</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Is a valid phone number</h4>
+                <ul id="isPhoneNumber"></ul>
+            </div>
+            
+            <div class="col">
+                <h4 class="text-center">Not a valid phone number</h4>
+                <ul id="notPhoneNumber"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>CASH REGISTER</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original51">Type the price</label>
+            <input id="original51">
+            <label for="original52">Type the cash</label>
+            <input id="original52">
+            <label for="original53">Type the cid</label>
+            <input id="original53">
+            <button id="submit-btn5" type="submit">Click for the change</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Your changes</h4>
+                <ul id="changes" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>BUBBLE SORT</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original6">Type an array of numbers</label>
+            <input id="original6">
+            <button id="submit-btn6" type="submit">Sort the array</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Sorted array</h4>
+                <ul id="bubble-list" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>INSERTION SORT</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original7">Type an array of numbers</label>
+            <input id="original7">
+            <button id="submit-btn7" type="submit">Sort the array</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Sorted array</h4>
+                <ul id="insertion-list" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>MERGE SORT</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original8">Type an array of numbers</label>
+            <input id="original8">
+            <button id="submit-btn8" type="submit">Sort the array</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Sorted array</h4>
+                <ul id="merge-list" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2>SELECTION SORT</h2>
+        </div>
+        
+        <div class="text-center mt-4">
+            <label for="original9">Type an array of numbers</label>
+            <input id="original9">
+            <button id="submit-btn9" type="submit">Sort the array</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Sorted array</h4>
+                <ul id="selection-list" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="container">
+        <div class="text-center mt-3">
+            <h2><i class="far fa-grin-squint-tears"></i> RANDOM JOKES BUTTON <i class="far fa-grin-squint-tears"></i></h2>
+            <button id="submit-btn10" type="submit">Click me for some giggles</button>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h4 class="text-center">Jokes</h4>
+                <ul id="jokes" class="centered-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <script src="Algorithms/palindrome.js"></script>
+    <script src="Algorithms/roman.js"></script>
+    <script src="Algorithms/caesarsCipher.js"></script>
+    <script src="Algorithms/phone_validator.js"></script>
+    <script src="Algorithms/cash_register.js"></script>
+    <script src="Algorithms/jokes.js"></script>
+    <script src="Algorithms/bubbleSort.js"></script>
+    <script src="Algorithms/insertionSort.js"></script>
+    <script src="Algorithms/mergeSort.js"></script>
+    <script src="Algorithms/selectionSort.js"></script>
+    
+</body>

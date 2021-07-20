@@ -3,7 +3,7 @@
 This small project consists of some algorithms written to complete FreeCodeCamp's curriculum, as well as some sorting algorithms. I decided to include them all in a webpage.
 These simple algorithms are written in JS.
 
-### See the project at https://guiosorio.github.io/JS-Algos/
+### See the project at: https://guiosorio.github.io/JS-Algos/
 
 ## Algorithm's description:
 #### Caesar's Chiper
